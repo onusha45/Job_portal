@@ -37,8 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Employer_app',
-    'User_app',
+    #custom app
+    'Employer_app.apps.EmpoloyerAppConfig',
+    'User_app.apps.UserAppConfig',
 ]
 
 MIDDLEWARE = [
@@ -112,6 +113,8 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+AUTH_USER_MODEL = "User_app.CustomUser"
+
 
 
 # Static files (CSS, JavaScript, Images)

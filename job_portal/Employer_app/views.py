@@ -1,5 +1,5 @@
 from django.shortcuts import render
 
 # Create your views here.
-def jobseekersignuo(request):
-    return render(request,'jobseekersignup.html')
+def employersignup(request):
+    return render(request,'employersignup.html')

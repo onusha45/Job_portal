@@ -6,8 +6,17 @@
     <title>Document</title>
 </head>
 <body>
+    <div>
     <h1>Hi this is INDEX page</h1>
-    <a href="">Sign up as Job Seeker</a>
-    <a href="">Sign up as Employeer</a>
+    <div>
+    <a href="{% url 'jobseekersignup'%}">Sign up as Job Seeker</a>
+</div>
+<div>
+    <a href="{% url 'employersignup'%}">Sign up as Employeer</a>
+</div>
+<div>
+    <a href="{% url 'login'%}">Login </a>
+</div>
+</div>
 </body>
 </html>
