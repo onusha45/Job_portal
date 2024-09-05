@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path
-from .views import *
+from Employer_app.views import employersignup
 urlpatterns = [
    path('employersignup/',employersignup,name= 'employersignup')
 ] 

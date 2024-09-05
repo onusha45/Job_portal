@@ -1,5 +1,5 @@
 from django import forms
-from .models import CustomUser
+from User_app.models import CustomUser
 
 class Login(forms.ModelForm):
     password = forms.CharField(widget=forms.PasswordInput)
@@ -12,4 +12,4 @@ class UserSignup(forms.ModelForm):
     
     class Meta :
         model = CustomUser
-        fields = ['first_name','last_name','email','password','repassword','profile','resume']
+        fields = ['username','email','password','repassword','profile','resume']
