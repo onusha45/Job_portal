@@ -6,15 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-    <h1>Hi this is INDEX page</h1>
-    <div>
-    <a href="{% url 'signup'%}">Sign up</a>
-</div>
-
-<div>
-    <a href="{% url 'login'%}">Login </a>
-</div>
-</div>
+    {% block content %}
+    {% endblock content %}
 </body>
 </html>
