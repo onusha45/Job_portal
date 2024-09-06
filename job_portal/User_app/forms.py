@@ -8,8 +8,9 @@ class Login(forms.ModelForm):
         fields = ['email','password']
 
 class UserSignup(forms.ModelForm):
+    email = forms.EmailField()
     password = forms.CharField(widget=forms.PasswordInput)
-    
+    repassword = forms.CharField(widget=forms.PasswordInput)
     class Meta :
         model = CustomUser
-        fields = ['username','email','password','repassword','profile','resume']
+        fields = ['first_name','last_name','email','password','repassword','profile','resume']

@@ -1,6 +1,6 @@
 
 <marquee behavior="" direction="">Welcome to job seeker login page </marquee>
-<form method="post" >
+<form method="post" enctype="multipart/form-data">
     {% csrf_token %}
     <div class="form-group">
         {{ form.as_p }}
