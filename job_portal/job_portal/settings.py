@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     #custom app
-    'Employer_app.apps.EmpoloyerAppConfig',
     'User_app.apps.UserAppConfig',
 ]
 
