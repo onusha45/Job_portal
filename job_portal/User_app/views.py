@@ -96,8 +96,12 @@ def login(request):
 
 
 
-def jobseekerhome(request):
-   return render(request,'jobseekerhome.html')
+def jobseekerhome(request ):
+   user = request.user
+   context = {
+       'user':user,
+   }
+   return render(request,'jobseekerhome.html',context)
 
 def employeerhome(request):
     return render(request, "employeerhome.html")
