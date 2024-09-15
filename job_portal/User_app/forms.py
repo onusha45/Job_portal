@@ -9,9 +9,14 @@ class UserSignup(forms.ModelForm):
     repassword = forms.CharField(widget=forms.PasswordInput)
     class Meta :
         model = CustomUser
-        fields = ['username','first_name','last_name','email','password', 'repassword','profile','resume', 'isEmployeer']
+        fields = ['profile', 'username','email','password', 'repassword', 'isEmployer']
 
 class EmployeerSignup(forms.ModelForm):
     class Meta :
         model = CustomUser
-        fields = ['phone_no', 'address', 'company_name']
+        fields = ['phone_no', 'address', 'company_name', 'pan_no']
+
+class JobseekerSignup(forms.ModelForm):
+    class Meta :
+        model = CustomUser
+        fields = ['first_name', 'last_name', 'qualification', 'resume', 'phone_no', 'address']

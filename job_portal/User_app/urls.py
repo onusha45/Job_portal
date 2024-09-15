@@ -6,10 +6,11 @@ from User_app.views import *
 
 urlpatterns =   [
      path('signup/', signup ,name='signup'),
-     path('employeer_signup', employeer_signup, name="employeer_signup"),
+     path('employer_signup', employer_signup, name="employer_signup"),
+     path('jobseeker_signup', jobseeker_signup, name="jobseeker_signup"),
      path('login/',login,name='login'),
      path('jobseekerhome/', jobseekerhome ,name='jobseekerhome'),
-     path('employeerhome/', employeerhome ,name='employeerhome'),
+     path('employerhome/', employerhome ,name='employerhome'),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
